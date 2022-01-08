@@ -1,23 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import { Link } from 'react-router-dom';
+import './style.css'
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <div className="container">
+        <h4 className="center">Rupository</h4>
+        <p>Curated archive of YouTube videos<br/>showcasing important bits of<br/>the phenomenal world of<br/>Rupaul's Drag Race</p>
+      </div>
+      <div>
+        <Link to='/home'> 
+          <button type='button' id="enter-button">
+            Enter Rupository
+          </button>
+        </Link>
+      </div>
     </div>
   );
 }
